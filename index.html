@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biodata - Faiz Aji Sapta Wijaya</title>
+<style>
+  :root {
+    --navy: #1b263b;
+    --navy-light: #415a77;
+    --cream: #f7f4ef;
+    --gold: #c9973f;
+    --text: #22252a;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background: var(--cream);
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    padding: 48px 20px;
+  }
+
+  .card {
+    background: #ffffff;
+    max-width: 640px;
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(27, 38, 59, 0.12);
+  }
+
+  .header {
+    background: var(--navy);
+    color: #fff;
+    padding: 40px 36px 32px;
+    position: relative;
+  }
+
+  .header::after {
+    content: "";
+    position: absolute;
+    left: 36px;
+    bottom: 0;
+    width: 56px;
+    height: 4px;
+    background: var(--gold);
+  }
+
+  .header h1 {
+    margin: 0 0 6px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.1rem;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+  }
+
+  .header p {
+    margin: 0;
+    color: #cfd8e3;
+    font-size: 0.95rem;
+  }
+
+  .body {
+    padding: 32px 36px 40px;
+  }
+
+  .field {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 4px 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid #ece7dd;
+  }
+
+  .field:last-child {
+    border-bottom: none;
+  }
+
+  .field .label {
+    color: var(--navy-light);
+    font-size: 0.85rem;
+  }
+
+  .field .value {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .hobi-list {
+    margin: 0;
+    padding-left: 18px;
+  }
+
+  .hobi-list li {
+    margin-bottom: 2px;
+  }
+</style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="header">
+      <h1>Faiz Aji Sapta Wijaya</h1>
+      <p>Mahasiswa &mdash; Halaman Biodata</p>
+    </div>
+
+    <div class="body">
+
+      <div class="field">
+        <div class="label">NPM</div>
+        <div class="value">29421045</div>
+      </div>
+
+      <div class="field">
+        <div class="label">Program Studi</div>
+        <div class="value">Informatika</div>
+      </div>
+
+      <div class="field">
+        <div class="label">Deskripsi Singkat</div>
+        <div class="value">
+          saya merupakan Mahasiswa Informatika Fakultas Ilmu Komputer 
+          saya sudah mempelajari membuat data base kecil menggunakan CRUD dengan Python dan MySQL, merancang
+          basis data dan ERD, hingga menyusun struktur data seperti
+          hash table. Tertarik juga pada sisi visual dan estetika
+          dalam setiap proyek yang dikerjakan.
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="label">Hobi</div>
+        <div class="value">
+          <ul class="hobi-list">
+            <li>Sepak bola</li>
+            <li>mancing</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
